@@ -17,13 +17,13 @@ def format(sentence):
     result = dependency_parser.raw_parse(sentence)
 
     for dep in result:
-        # print(dep.tree())
-        # cf = CanvasFrame()
-        # t = dep.tree()
-        # tc = TreeWidget(cf.canvas(),t)
-        # cf.add_widget(tc,10,10) # (10,10) offsets
-        # cf.print_to_file('tree.ps')
-        # cf.destroy()
+        print(dep.tree())
+        cf = CanvasFrame()
+        t = dep.tree()
+        tc = TreeWidget(cf.canvas(),t)
+        cf.add_widget(tc,10,10) # (10,10) offsets
+        cf.print_to_file('tree.ps')
+        cf.destroy()
         return(dep.to_conll(10), tokens)
 
     
