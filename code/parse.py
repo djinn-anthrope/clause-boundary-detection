@@ -1,3 +1,4 @@
+import subprocess
 from nltk.parse.stanford import StanfordDependencyParser
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk import Tree
@@ -9,8 +10,18 @@ from nltk.draw import TreeWidget
 
 
 def format(sentence):
-    path_to_jar = '/home/alok/Open_Source/stanford-full/stanford-parser-full-2017-06-09/stanford-parser.jar'
-    path_to_models_jar = '/home/alok/Open_Source/stanford-full/stanford-parser-full-2017-06-09/stanford-parser-3.8.0-models.jar'
+    filename = 'stanford-parser.jar'
+    command = ['locate', filename]
+    output = subprocess.Popen(command, stdout=subprocess.PIPE).communicate()[0]
+    path_to_jar = output.decode().strip()
+
+    filename = 'models.jar'
+    command = ['locate', filename]
+    output = subprocess.Popen(command, stdout=subprocess.PIPE).communicate()[0].decode().strip()
+    output = output.split('\n')
+    for op in output:
+            if 'parse' in op:
+                    path_to_models_jar = op
 
     dependency_parser = StanfordDependencyParser(path_to_jar=path_to_jar, path_to_models_jar=path_to_models_jar)
     tokens = word_tokenize(sentence)

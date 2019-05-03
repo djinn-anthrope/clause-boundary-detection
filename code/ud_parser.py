@@ -1,6 +1,7 @@
 import sys
 import pickle
 import parse
+
 def get_dict(tree):
 	dictList = {}
 	depTree = {}
