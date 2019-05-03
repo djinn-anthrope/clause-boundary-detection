@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<TITLE>The XML format used by DGA</TITLE>
+<link rel="stylesheet" href="dga.css">
+</HEAD>
+<BODY>
+<h2>Annotation File Format</h2>
+<p class="Justify">The annotated texts are saved in either:</P
+<ul>
+<li> <a href="http://www.w3.org/XML/" target="_blank">XML</a> format</li>
+<li> tab separated <a href="http://nextens.uvt.nl/~conll/#dataformat">CoNLL-X format</a>.</li>
+</ul>
+<p>
+Although a standard set of XML tags for syntactic annotation does not exist
+yet, as is the case for morpho-syntactic annotation (<a
+href="http://www.cs.vassar.edu/XCES/" target="_blank">XCES</a>),
+<b>DGA</b> uses a minimal set of tags inspired by XCES. Thus, the XML files produced by
+<b>DGA</b> can be easily transformed, by means of <a
+href="http://www.w3.org/Style/XSL/" target="_blank">XSLT</a>, into XML files
+which are based on a different vocabulary (tag set) meeting the requirements
+of the user or being in conformity with a future standard.</p>
+
+<p class="Justify">
+In order to illustrate the set of tags used, we present the following fragment
+of a XML file, representing the annotation of the sentence "John likes apples"
+(see <a href="whatis.htm">What is DGA</a>).
+</p>
+<pre>
+&lt;s>
+   &lt;tok id="1">
+      &lt;orth>John&lt;/orth>
+      &lt;lemma>John&lt;/lemma>
+      &lt;pos>Noun&lt;/pos>
+      &lt;syn head="2">
+         &lt;reltype>Subject&lt;/reltype>
+      &lt;/syn>
+   &lt;/tok>
+   &lt;tok id="2">
+      &lt;orth>likes&lt;/orth>
+      &lt;lemma>like&lt;/lemma>
+      &lt;pos>Verb&lt;/pos>
+      &lt;syn head="4">
+         &lt;reltype>Predicate&lt;/reltype>
+      &lt;/syn>
+   &lt;/tok>
+   &lt;tok id="3">
+      &lt;orth>apples&lt;/orth>
+      &lt;lemma>apple&lt;/lemma>
+      &lt;pos>Noun&lt;/pos>
+      &lt;syn head="2">
+         &lt;reltype>Object&lt;/reltype>
+      &lt;/syn>
+   &lt;/tok>
+&lt;/s>
+</pre>
+
+<p class="Justify">Each sentence is marked by tag &lt;s> ... &lt;/s>. Each
+  word in the sentence, together with all information concerning its
+  annotation, is marked by tag &lt;tok> ... &lt;/tok>.
+  Attribute <tt>id</tt> indicates the number of the word within the sentence
+  (counting starts from 1, 0 being reserved for the root).
+ Within the tag <tt>tok</tt>, the following tags are used:</p>
+<dl>
+<dt><tt>orth</tt></dt><dd>the orthographic form, as it occurs in the annotated text</dd>
+<dt><tt>lemma</tt></dt><dd>the word lemma</dd>
+<dt><tt>pos</tt></dt><dd>the part of speech is specified</dd>
+<dt><tt>syn</tt></dt><dd>marks the dependency relation. This tag refers to the head word is by means of the attribute <tt>head</tt>. The type of dependency relation
+  existing between the two words (the one to which the annotation belongs and
+  the head word) is specified by means of tag &lt;reltype>
+  ... &lt;/reltype>.</dd>
+</dl>
+
+<p class="nav">
+<a href="biblio.htm"><img src="next.gif" alt="Next Page" border="0"></a></p>
+<p class="footer">Dependency Grammar Annotator</p>
+</BODY>
+</HTML>

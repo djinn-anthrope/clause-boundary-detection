@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+<TITLE>Configuration</TITLE>
+<link rel="stylesheet" href="dga.css">
+</HEAD>
+<BODY>
+<h2>Configuration</h2>
+
+<p class="Justify">The tagsets for the parts of speech and the dependency
+relations used in annotations can be configured according to the chosen corpus.
+This default corpus is chosen according to the language locale.
+</p>
+
+<p align="justify">Corpus specific configuration is provided through
+resource files.
+The following properties can be specified:
+<dl>
+<dt>corpus</dt><dd>the name of the corpus</dd>
+<dt>language</dt><dd>the language used in the corpus</dd>
+<dt>pos</dt><dd>the POS tags to use (one per line, paired with an optional
+comment to be displayed as a tooltip)</dd>
+<dt>deprel</dt><dd>the set of dependency relations (one per line, paired with
+an optional comment to be displayed as a tooltip)</dd>
+<dt>tagger</dt><dd>URL of an optional Part of Speech tagging service</dd>
+</dl>
+
+The configuration file for each corpus is stored in the directory <tt>dga</tt>.
+Other corpora can be added by placing their configuration file in this directory.
+They must be named as <tt>DGA_<em>name</em></tt> where <tt><em>name</em></tt>
+is the short name for the corpus, typically an
+<a href="http://www.ics.uci.edu/pub/ietf/http/related/iso639.txt">ISO Language Code</a>.
+DGA will load them at startup.
+
+A set of default configuration files is provided and associated to the locale
+name of their language.
+Here is the default configuration file for English <tt>dga/DGA_en.xml</tt>:</p>
+
+<pre style="border: solid black 1">
+
+&lt;?xml version="1.0" encoding="UTF-8"?>
+  &lt;!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+   &lt;properties>
+   &lt;comment>Configuration for English language tagging&lt;/comment>
+   &lt;entry key="tagger">http://medialab.di.unipi.it/cgi-bin/tagger?&lt;/entry>
+   &lt;entry key="language">en&lt;/entry>
+
+&lt;!-- Dependency Relations -->
+&lt;entry key="deprels">subj|subject
+obj|object
+appo|apposition
+det|determiner
+mod|modifier
+aux|aux
+gen|genitive
+nn|nn
+pcomp|complement
+ROOT|Sentence root
+punc|Punctuation&lt;/entry>
+
+&lt;!-- POS Tags -->
+&lt;entry key="pos">CC|Coordinating conjunction
+CD|Cardinal number
+DT|Determiner
+EX|Existential there
+FW|Foreign word
+IN|Preposition/subord. conjunction
+JJ|Adjective
+JJR|Adjective, comparative
+JJS|Adjective, superlative
+LS|List item marker
+MD|Modal
+NN|Noun, singular or mass
+NNS|Noun, plural
+NNP|Proper noun, singular
+NNPS|Proper noun, plural
+PDT|Predeterminer
+POS|Possessive ending
+PRP|Personal pronoun
+PP|Possessive pronoun
+RB|Adverb
+RBR|Adverb, comparative
+RBS|Adverb, superlative
+RP|Particle
+SYM|Symbol
+TO|to
+UH|Interjection
+VB|Verb, base form
+VBD|Verb, past tense
+VBG|Verb, gerund/present participle
+VBN|Verb, past participle
+VBP|Verb, non-3rd ps. sing. present
+VBZ|Verb, 3rd ps. sing. present
+WDT|wh-determiner
+WP|wh-pronoun
+WP|Possessive wh-pronoun
+WRB|wh-adverb
+#|Pound sign
+$|Dollar sign
+.|Sentence-final punctuation
+,|Comma
+:|Colon, semi-colon
+(|Left bracket character
+)|Right bracket character
+"|Straight double quote
+`|Left open single quote
+"|Left open double quote
+'|Right close single quote
+"|Right close double quote&lt;/entry>
+&lt;/properties>
+
+</pre>
+
+<p class="nav">
+<a href="install.htm"><img src="prev.gif" alt="Previous Page"></a> &nbsp <a Class="NxtPrvPage" href="open.htm"><img src="next.gif" alt="Next Page"></a>
+</p>
+<p class="footer">Dependency Grammar Annotator</p>
+</BODY></HTML>

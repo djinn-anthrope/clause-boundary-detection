@@ -1,0 +1,9 @@
+/* Cascading Style Sheet for TreeView */
+/* ============================================= */
+
+a	{color: blue; text-decoration: none; }
+a:hover {color: red; }
+
+body	{ background-color: "#CCCCCC"; }
+img	{ border-width: "0"; }
+

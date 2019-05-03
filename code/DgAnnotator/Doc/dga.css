@@ -1,0 +1,39 @@
+/* Cascading Style Sheet */
+/* ============================================= */
+
+/* Justify Text in Selected Paragraph Tags */
+P.Justify  {text-align: Justify; }
+LI.Justify {text-align: Justify; }
+
+IMG { border-width: 0}
+
+/* Change General Links Colour & Make Bold When Mouse Passes Over */
+a:hover		{color: #800080; font-weight: bold; }
+
+/* Expandable Section HyperText Colour */
+a:sidebar	{color: #339900; } 
+
+/* Expandable Section HyperText Colour When Visited (Note: Same As Above) */
+a:visited.sidebar: {color: #339900; text-decoration: none; }
+
+/* Expandable Section HyperText Is Underlined When Mouse Passes Over */
+a:hover.sidebar:   {text-decoration: underline; }
+
+/* Popup Text HyperText Colour, Font Style & Cursor */
+a.PopupText:link {color: green; font-style: italic; cursor: help; }    /* unvisited link */
+
+/* Popup Text HyperText After Visited (Note: Same As Above) */
+a.PopupText:visited {color: green; font-style: italic; cursor: help; } /* visited link   */
+
+/* Navigation links */
+p.nav	 	{text-align: right; }
+p.nav.a:link	{text-decoration: none; }
+p.nav.a:hover:  {color: blue; text-decoration: underline; }
+p.nav.a:visited {color: blue; }
+
+/* Footer */
+p.footer { background-color: "navy"; text-align: "center";
+	font-size="-1"; color:"white" }
+
+/* Commands */
+*.command { font-family: "helvetica"; font-size: 12; font-weight: "bold" }

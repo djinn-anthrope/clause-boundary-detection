@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>Viewing and modifying an annotated text</TITLE>
+<link rel="stylesheet" href="dga.css">
+</HEAD>
+<BODY>
+<h2>Viewing and modifying an annotated text</h2>
+<p>
+<b>DGA</b> allows viewing and possibly modifying the annotations of previously
+annotated texts. Through the <b>Open</b> command from menu <b>File</b> one can
+select the file containing the annotated text.
+The selected file must be either:
+<ul>
+<li>an XML file, having a structure in accordance with the <b>DGA</b> format
+  (see <a href="dgaxml.htm"> The XML format used by DGA</a>)</li>
+<li>a file in the <a href="http://depparse.uvt.nl/depparse-wiki/SharedTaskWebsite">CoNLL tab format</a>, with extension <tt>.conll</tt> or <tt>.tab</tt></li>.
+<li>a text file: in this case, the file will be sent for parsing to the
+  service indicated in the <b>tagger</b> field in the resource bundle for the
+  current corpus (e.g. "http://tanl.di.unipi.it/en/api")</li>.
+</ul></p>
+<p class="Justify">
+The content of the chosen file will be displayed within a new window tab,
+one sentence per line.
+When clicking on a sentence, its annotation will be displayed in the
+annotation panel.
+Annotations can be edited here (see the <a href="annotation.htm">section referring to annotation</a>).
+<p class="Justify">
+Saving modifications is performed by means of the commands <b>Save</b> or <b>Save as</b> from menu <b>File</b>.
+
+<p class="nav">
+<a href="bookmark.htm"><img src="prev.gif" alt="Previous Page"></a></p>
+<p class="footer">Dependency Grammar Annotator</p>
+</BODY></HTML>

@@ -1,0 +1,39 @@
+(have
+  (translating When we are (sentence a))
+  (structure the and functions (sentence of the))
+  (kept to be (mind in))
+  (contribute
+    as
+    they
+    (fluency to the and faithfulness (translation of the))))
+1	When	_	WRB	WRB	_	4	advmod	_	_
+2	we	_	PRP	PRP	_	4	nsubj	_	_
+3	are	_	VBP	VBP	_	4	aux	_	_
+4	translating	_	VBG	VBG	_	15	advcl	_	_
+5	a	_	DT	DT	_	6	det	_	_
+6	sentence	_	NN	NN	_	4	dobj	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	structure	_	NN	NN	_	15	nsubj	_	_
+10	and	_	CC	CC	_	9	cc	_	_
+11	functions	_	NNS	NNS	_	9	conj	_	_
+12	of	_	IN	IN	_	14	case	_	_
+13	the	_	DT	DT	_	14	det	_	_
+14	sentence	_	NN	NN	_	9	nmod	_	_
+15	have	_	VBP	VBP	_	0	root	_	_
+16	to	_	TO	TO	_	18	mark	_	_
+17	be	_	VB	VB	_	18	auxpass	_	_
+18	kept	_	VBN	VBN	_	15	xcomp	_	_
+19	in	_	IN	IN	_	20	case	_	_
+20	mind	_	NN	NN	_	18	nmod	_	_
+22	as	_	IN	IN	_	24	mark	_	_
+23	they	_	PRP	PRP	_	24	nsubj	_	_
+24	contribute	_	VBP	VBP	_	15	advcl	_	_
+25	to	_	TO	TO	_	27	case	_	_
+26	the	_	DT	DT	_	27	det	_	_
+27	fluency	_	NN	NN	_	24	nmod	_	_
+28	and	_	CC	CC	_	27	cc	_	_
+29	faithfulness	_	NNS	NNS	_	27	conj	_	_
+30	of	_	IN	IN	_	32	case	_	_
+31	the	_	DT	DT	_	32	det	_	_
+32	translation	_	NN	NN	_	27	nmod	_	_
+

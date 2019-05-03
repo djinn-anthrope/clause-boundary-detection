@@ -1,0 +1,107 @@
+ <HTML>
+<HEAD>
+<TITLE>Annotation</TITLE>
+<link rel="stylesheet" href="dga.css">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="">
+<h2 align="justify">Annotation</h2>
+
+<p class="Justify">The annotation process starts by selecting a sentence to be
+annotated from the displayed text in the lower panel.
+</p>
+<p class="Justify">Text can be entered directly in the tab named <span
+class="command">Scratch</span>: a sentence can be selected from this tab by
+dragging the mouse while pressing the left button. Once a fragment of text
+(sentence) is selected, the tool bar button <img src="Annotate.gif" width="16"
+height="16"> is enabled. Pressing this button, the selected text is submitted
+to the POS tagger for tagging and then it is displayed in the annotation
+panel.
+</p>
+<p class="Justify">
+Sentences loaded from corpus files can just be selected with a mouse click.
+</p>
+
+<p align="center"><img src="a2.jpg"></p>
+
+<h3>POS Tagging</h3>
+
+<p class="Justify">Select the POS tag for a word from the line below the
+sentence: the list of available POS tags for the given corpus will appear in
+the pane to the left; select (left mouse button) the appropriate one to
+annotate the word.
+
+<p align="center"><img src="PosTag.jpg"></p>
+
+<h3>Dependency Tagging</h3>
+
+<p class="Justify">In order to create a dependency relation between two words,
+first select (left mouse button) the <i>dependent</i> word (the one from
+where the arc starts). This word gets marked in blue.</p>
+
+<p align="center"><img src="a4.jpg"></p>
+
+<p class="Justify">
+Next, click on the <i>head</i> word: an arc from the dependent word to the head
+word will be created. This arc will be labeled with an empty label "[  ]".</p>
+
+<p align="center"><img src="a5.jpg"></p>
+
+<p class="Justify">
+In order to assign a dependency relation to an arc one must select its label
+and then click on the appropriate label in the left panel.</p>
+
+<p align="center"><img src="a7.jpg"></p>
+
+<p class="Justify">
+A dependency relation can be deleted by selecting its arc label and pressing
+the <i>Delete</i> key.</p>
+
+<p class="Justify">
+According to the <a href="biblio.htm">dependency grammar</a> formalism, each
+token in a sentence (word or punctuation) must depend on a single other
+one. The only exception is the head of the whole sentence (usually the main
+verb), which depends on no other word. This fact is graphically indicated by a
+dangling arc like the one attached to the verb <tt>likes</tt> in the following
+figure:
+
+<p align="center"><img src="Ann1.jpg"></p>
+
+<p class="Justify">Specifying that a word is the head of a sentence is
+achieved as follows: click on the head word to mark it, then click on the word
+itself for indicating it as head of the sentence. Assigning a type to this new
+arc (typically <tt>ROOT</tt>) is performed like for others relation types.</p>
+
+<p class="Justify">Since a sentence can have just one head word, <b>DGA</b>
+allows defining only one such word. Once a head word for a sentence has been
+identified, no other word can be marked as head word.</p>
+
+<p class="Justify">The actions for creating and labeling dependency relations
+can be performed repeatedly until the user considers the sentence to be
+properly and completely annotated.</p>
+
+<p class="Justify">An annotated sentence can be saved by using the menu
+command <span class="command">Append To..</span>, which lets the user choose a file to which the
+sentence will be added.</p>
+
+<p class="Justify">If another sentence is selected for being annotated
+witthout having being saved, the user is notified and is allowed to save the
+sentence, even if it is not completely annotated.</p>
+
+<h3>Undo/Redo</h3>
+
+The buttons <img src="undo.png" width="16" height="16"> and <img
+src="redo.png" width="16" height="16"> can used to undo previous editing
+actions or redo them.
+
+<h3>Pan/Zoom</h3>
+
+The buttons <img src="pan.gif" width="16" height="16"> and <img
+src="zoom.gif" width="16" height="16"> can used to pan or zoom the image of
+the sentence.
+
+
+<p class="nav">
+<a href="open.htm"><img src="prev.gif" alt="Previous Page"></a>
+&nbsp <a href="saveImage.htm"><img src="next.gif" alt="Next Page"></a></p>
+<p class="footer">Dependency Grammar Annotator</p>
+</BODY></HTML>

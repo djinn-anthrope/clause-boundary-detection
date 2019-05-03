@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<TITLE>Installation</TITLE>
+<link rel="stylesheet" href="dga.css">
+</HEAD>
+<BODY>
+<h2>Installation</h2>
+<h3>Requirements</h3>
+<ol>
+  <li>
+    <p class="Justify"><b>DGA</b> requires Java 2 Standard Edition (J2SE) 5.0.</li>
+  <li>
+    <p class="Justify">Minimum hardware requirements for running <b>DGA</b>
+    are a CPU of at least 133 MHz and 64M of RAM memory.</li>
+</ol>
+
+<h3>Installation on Windows</h3>
+<ol>
+  <li>Install Java 2 on your system. If Java 2 is already
+    installed, skip this step. Dowload the installation kit for your platform
+    from <a href="http://java.sun.com" target="_blank">java.sun.com</a>. Either
+    the J2SE development kit (JDK) or just the J2SE Runtime Environment (JRE)
+    runtime environment can be used. JRE 5.0 or later is required.</li>
+  <li>Run the installer <tt>dga.msi</tt>.</li>
+</li>
+</ol>
+
+<h3>Installation on other OS</h3>
+<ol>
+  <li>Install Java 2 on your system. If Java 2 is already
+    installed, skip this step. Dowload the installation kit for your platform
+    from <a href="http://java.sun.com" target="_blank">java.sun.com</a>. Either
+    the J2SE development kit (JDK) or just the J2SE Runtime Environment (JRE)
+    runtime environment can be used. JRE 5.0 or later is required.</li>
+  <li>Make sure that the PATH variable contains the path to the <tt>java</tt>
+    executable. You can check installation of the proper version of Java by
+    issuing the command <tt>java&nbsp;-version</tt>. You should get an output
+    like this:
+    <pre style="border: solid black 1">
+
+    > java -version
+    java version "1.5.0_06"
+    Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_06-b05)
+    Java HotSpot(TM) Client VM (build 1.5.0_06-b05, mixed mode)
+
+    >
+    </pre>
+  </li>
+  <li>
+    <p class="Justify">Uncompress the archive <tt>dga.tgz</tt>:
+    <pre style="border: solid black 1">
+
+    tar zxf dga.tgz
+    </pre>
+    This will create a directory <tt>DGAnnotator</tt>.
+  <li>
+    <p class="Justify">In order to run <b>DGA</b>, issue the following
+    command in the directory <tt>DGAnnotator</tt>:
+    <pre style="border: solid black 1">
+
+    java -jar dga.jar
+    </pre>
+</ol>
+
+<p class="nav">
+<a href="config.htm"><img src="next.gif" alt="Next Page"></a></p>
+<p class="footer">Dependency Grammar Annotator</p>
+</BODY></HTML>

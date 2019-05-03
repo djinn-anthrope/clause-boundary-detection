@@ -1,0 +1,7 @@
+GIVEN SENTENCE: There are a lot of people dying that I did not think would be hurt in this process."
+Clause1: There are a lot of people
+Clause2: dying
+Clause3: that I did not think
+Clause4: would be hurt in this process
+
+
