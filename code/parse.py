@@ -17,7 +17,7 @@ def format(sentence):
     result = dependency_parser.raw_parse(sentence)
 
     for dep in result:
-        print(dep.tree())
+        # print(dep.tree())
         cf = CanvasFrame()
         t = dep.tree()
         tc = TreeWidget(cf.canvas(),t)
