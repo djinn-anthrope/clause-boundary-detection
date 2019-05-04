@@ -59,6 +59,7 @@ print(clauseProbs[0])
 input_sent = str(input("Input Sentence here --> "))
 
 input_tree, tokens = parse.format(input_sent)
+input_tree = input_tree.to_conll(10)
 treeparsed = [line.split('\t') for line in input_tree.split('\n')]
 if treeparsed[-1] == ['']:
 	del treeparsed[-1]

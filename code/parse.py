@@ -35,7 +35,7 @@ def format(sentence):
         cf.add_widget(tc,10,10) # (10,10) offsets
         cf.print_to_file('tree.ps')
         cf.destroy()
-        return(dep.to_conll(10), tokens)
+        return(dep, tokens)
 
     
 # print(format(str(input()))[0]) 

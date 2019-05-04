@@ -17,9 +17,10 @@ def complete_sentence():
                 value = line.split(':')[1].strip()
                 cl[key] = value
 
-    conll, tokens = parse.format(sent)
-    for c in conll:
-        pos = c[7]
-        
-    print(conll)
+    parsed, tokens = parse.format(sent)
+    triples = parsed.triples()
+    conll = parsed.to_conll(10)
+    dot = parsed.to_dot()
+    for p in triples:
+        print(listp)   
 complete_sentence()
