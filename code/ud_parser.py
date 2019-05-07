@@ -55,7 +55,7 @@ for tree in trees:
 		clauseProbs.append(tree)
 print("Number of sentences with more than two clauses: ",len(clauseProbs))
 print("Number of sentences ignored: ",ignCount)
-print(clauseProbs[0])
+# print(clauseProbs[0])
 input_sent = str(input("Input Sentence here --> "))
 
 input_tree, tokens = parse.format(input_sent)
@@ -63,23 +63,23 @@ input_tree = input_tree.to_conll(10)
 treeparsed = [line.split('\t') for line in input_tree.split('\n')]
 if treeparsed[-1] == ['']:
 	del treeparsed[-1]
-print(treeparsed)
+# print(treeparsed)
 copy = treeparsed[:]
 j = 0
 for i, line in enumerate(treeparsed):
-	print(i, line)
+	# print(i, line)
 	if int(line[0]) == (i+j+1):
 		continue
 	else:
-		print('i',i, j)
+		# print('i',i, j)
 		if i + j < len(copy):
 			copy.insert(i+j, [str(i+j+1),tokens[i+j],'_','PUNCT','PUNCT','_','-10000','_','_','_'])
 		else:
 			copy.append([str(i+j+1),tokens[i+j],'_','PUNCT','PUNCT','_','-10000','_','_','_'])
 		j += 1
 treeparsed = copy[:]
-for line in treeparsed:
-	print(line)
+# for line in treeparsed:
+	# print(line)
 
 ofile = open('clause_data.pkl','wb')
 o1file = open('clause-treebank.conllu','w')

@@ -1,5 +1,6 @@
-GIVEN SENTENCE: The pirate captain lost her treasure map, but she still found the buried treasure."
-Clause1: The pirate captain lost her treasure map, but
-Clause2: she still found the buried treasure
+GIVEN SENTENCE: The number of travelers who reached the Americas, by accident or design, well before Columbus is enormous, if we are to believe every claim."
+Clause1: The number of travelers who reached the Americas, by accident or design, well before Columbus
+Clause2: is enormous,
+Clause3: if we are to believe every claim
 
 
