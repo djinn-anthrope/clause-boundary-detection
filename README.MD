@@ -1,6 +1,6 @@
-#Authors: Abheet Sharma(20161091) & Alok Debnath(20161122)
+# Authors: Abheet Sharma(20161091) & Alok Debnath(20161122)
 
-#English UD Data stats:
+## English UD Data stats:
 Tree count:  12543
 Word count:  204607
 Token count: 204607
@@ -11,11 +11,11 @@ Category=value feature pairs: 37
 There exists 3604 sentences with more than two clauses
 
 
-#LINK TO DATA
+## LINK TO DATA
 https://drive.google.com/open?id=1MkTiNqoWWNTN2wcGc6zDS_uVtNtLV-Kf (clause-treebank.conllu or UD_English-EWT/en_ewt-ud-train.conllu is required)
 
 
-#Relations
+## Relations
 Types of clause relations:
 - Parataxis: Phrases and clauses are placed one after another independently, without coordinating or subordinating them through the use of conjunctions.
 - ccomp: A clausal complement of a verb or adjective is a dependent clause with an internal subject which functions like an object of the verb or adjective.
@@ -25,7 +25,7 @@ Types of clause relations:
 - cc: A cc is the relation between a conjunct and a preceding coordinating conjunction. 
 
 
-#FILES
+## FILES
 DgAnnotator is used to visualize a dependancy tree from conllu data. This was used to identify patterns in clauses, their boundaries and their relations with other clauses.
 
 parse.py takes in an input sentence, and returns it in conll format, which we can then parse. It also creates a tree.ps which displays the sentence in a dependancy tree format.
@@ -37,8 +37,8 @@ ud_parser.py does two thing
 sentence_completion.py takes in sentence, splits them and tries to complete the sentences to get readable individual sentences.
 
 
-#HOW TO RUN
-parse.py cannot be run on its own
+## HOW TO RUN
+parse.py can be run on its own
 
 to run ud_parser.py, do 'python3 ud_parser.py 'path to conll treebank' <  'path to textfile containing input sentence'
 OR 'python3 ud_parser.py 'path to conll treebank'  and input the sentence when the prompt occurs
